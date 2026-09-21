@@ -1,0 +1,27 @@
+﻿# Project Drishti — Backend Dependencies
+# SIH 2026 PS-26060 | Ministry of Earth Sciences
+
+# Web framework
+fastapi
+uvicorn[standard]
+python-socketio
+
+# Database
+motor
+pymongo
+
+# Data validation
+pydantic
+
+# ML / Data
+numpy
+scikit-learn
+pandas
+
+# HTTP / Utilities
+httpx
+python-dotenv
+
+# CV (install separately if OpenCV fails — backend gracefully degrades)
+# opencv-python-headless
+# ultralytics
