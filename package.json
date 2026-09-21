@@ -1,0 +1,28 @@
+{
+  "name": "polar-tech-drishti",
+  "version": "1.0.0",
+  "description": "Project Drishti - Antarctic Research Station Digital Twin (Maitri & Bharati) for SIH 2026 PS-26060",
+  "private": true,
+  "main": "backend/run_drishti.py",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "python backend/run_drishti.py",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"python backend/run_drishti.py\"",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:start": "python backend/run_drishti.py"
+  },
+  "keywords": [
+    "antarctic-digital-twin",
+    "sih2026",
+    "ministry-of-earth-sciences",
+    "maitri",
+    "bharati",
+    "react",
+    "threejs",
+    "fastapi",
+    "yolov8"
+  ],
+  "author": "MoES / SIH 2026 Polar Tech Team",
+  "license": "MIT"
+}

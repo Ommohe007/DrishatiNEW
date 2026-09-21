@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: drishti-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python backend/run_drishti.py
+    envVars:
+      - key: PORT
+        value: 8000
+
+  - type: web
+    name: drishti-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
